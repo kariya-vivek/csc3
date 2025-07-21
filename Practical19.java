@@ -144,23 +144,29 @@ public class Practical19 {
             Scanner sc=new Scanner(System.in);
             System.out.print("enter your choise=");
             int a=sc.nextInt();
-            switch(a)
-            {
-                case 1:
-                        obj.inse();
-                        break;
-                case 2:
-                        obj.upd();
-                        break;
-                case 3:
-                        obj.del();
+            do
+	    {
+               switch(a)
+              {
+                  case 1:
+                          obj.inse();
+                          break;
+                  case 2:
+                          obj.upd();
+                          break;
+                  case 3:
+                          obj.del();
+                          break;
+                  case 4:
+                         obj.sel();
                          break;
-                case 4:
-                        obj.sel();
-                         break;
-                default :
+                  default :
                         System.out.println("choos another from 1 to 4");
-            }
+	      }
+		System.out.println("do you want to continue y or n");
+                String op=sc.next();
+
+	    }while(y==op);
             
         }
         catch(Exception e)
