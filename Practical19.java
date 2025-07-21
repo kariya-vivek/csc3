@@ -1,4 +1,4 @@
-/*
+2/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -166,7 +166,7 @@ public class Practical19 {
 		System.out.println("do you want to continue y or n");
                 String op=sc.next();
 
-	    }while(y==op);
+	    }while("y"==op);
             
         }
         catch(Exception e)
